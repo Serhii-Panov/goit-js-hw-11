@@ -1,0 +1,21 @@
+.gallery {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 360px);
+  align-items: center;
+  justify-items: center;
+}
+img {
+  width: 360px;
+  height: 200px;
+  transition: transform 250ms ease-in;
+}
+img:hover {
+  transform: scale(1.05);
+}
+.gallery-wrapper {
+  overflow: hidden;
+  height: 80vh;
+  display: grid;
+  place-items: center;
+}
